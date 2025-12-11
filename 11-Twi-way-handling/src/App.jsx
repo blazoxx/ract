@@ -7,7 +7,7 @@ const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log("form submitted by", title);
-    setTitle("");
+    setTitle(""); 
   }
 
   return (
