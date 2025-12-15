@@ -1,4 +1,4 @@
-import Reac, { useState } from "react";
+import React, { useState } from "react";
 
 const App = () => {
   const [num, setNum] = useState(20);
@@ -16,17 +16,14 @@ const App = () => {
   const inc_dec = (val) => {
     if (val.target.innerText === "Increase") {
       setNumm(numm + 1);
-    }
-    else if (val.target.innerText === "Decrease") {
+    } else if (val.target.innerText === "Decrease") {
       setNumm(numm - 1);
-    }
-    else if (val.target.innerText === "Inc by 5") {
+    } else if (val.target.innerText === "Inc by 5") {
       setNumm(numm + 5);
-    }
-    else{
+    } else {
       setNumm(numm - 5);
     }
-  }
+  };
 
   return (
     <div className="m-4">
@@ -44,14 +41,20 @@ const App = () => {
           <h2 className="text-8xl font-bold">0</h2>
         </div>
         <div>
-          <button onClick={()=>{
-            document.querySelector("h2").innerText++;
-          }} className="bg-pink-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={() => {
+              document.querySelector("h2").innerText++;
+            }}
+            className="bg-pink-200 px-2 m-2 text-md font-semibold"
+          >
             Increase
           </button>
-          <button onClick={()=>{
-            document.querySelector("h2").innerText--;
-          }} className="bg-blue-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={() => {
+              document.querySelector("h2").innerText--;
+            }}
+            className="bg-blue-200 px-2 m-2 text-md font-semibold"
+          >
             Decrease
           </button>
         </div>
@@ -63,18 +66,30 @@ const App = () => {
           <p className="text-8xl font-bold flex-1">{numm}</p>
         </div>
         <div>
-          <button onClick={inc_dec} className="bg-pink-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={inc_dec}
+            className="bg-pink-200 px-2 m-2 text-md font-semibold"
+          >
             Increase
           </button>
-          <button onClick={inc_dec} className="bg-blue-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={inc_dec}
+            className="bg-blue-200 px-2 m-2 text-md font-semibold"
+          >
             Decrease
           </button>
         </div>
         <div>
-          <button onClick={inc_dec} className="bg-pink-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={inc_dec}
+            className="bg-pink-200 px-2 m-2 text-md font-semibold"
+          >
             Inc by 5
           </button>
-          <button onClick={inc_dec} className="bg-blue-200 px-2 m-2 text-md font-semibold">
+          <button
+            onClick={inc_dec}
+            className="bg-blue-200 px-2 m-2 text-md font-semibold"
+          >
             Dec by 5
           </button>
         </div>

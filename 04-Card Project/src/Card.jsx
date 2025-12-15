@@ -3,7 +3,7 @@ import saveIcon from "../src/assets/bookmark+.svg";
 import savedIcon from "../src/assets/bookmarked+.svg";
 
 const Card = (props) => {
-  console.log(props);
+  // console.log(props);
 
   const [saved, setSaved] = useState(false);
 
