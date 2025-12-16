@@ -25,6 +25,13 @@ const App = () => {
     numCHanging();
   }, [num]); // runs when 'num' changes only
 
+  useEffect(() => {
+    num2CHanging();
+  }, [num2]); // runs when 'num2' changes only
+
+  useEffect(() => {
+    num3CHanging();
+  }, [num3]); // runs when 'num3' changes only
 
   return (
     <div>
