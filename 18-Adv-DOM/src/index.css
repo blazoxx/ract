@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  background-color: #303030;
+}
+
+@layer utilities {
+  .center-absolute-text {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[100px] underline whitespace-nowrap capitalize;
+  }
+
+  .center-absolute-text-wrap {
+    @apply whitespace-normal;
+  }
+
+}
+
+
+/* a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
